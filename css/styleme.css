@@ -10,9 +10,22 @@ h1, h3 {
 }
 a {
     color: red;
+    text-decoration: none;
 }
 .hobby {
     color:yellow;
 }
+a:hover {
+    text-decoration: underline;
+  }
+  p::first-letter {
+    
+    font-size: 1.5em;
+  }
+  dt {
+      
+      color: yellow;
+  }
+
 
 
