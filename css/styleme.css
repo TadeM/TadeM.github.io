@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(58, 56, 56);
+    color: white;
+    font-size: medium;
+    font-family:  Tahoma, 'Courier New', 'Times New Roman';
+}
+h1, h3 {
+    color: rgb(22, 160, 214);
+    font-weight: 100;
+}
+a {
+    color: red;
+}
+.hobby {
+    color:yellow;
+}
+
+
