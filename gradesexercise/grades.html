@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Retrive Grade</title>
+    <meta charset="utf-8" />
+    <link href="grades.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" action="http://mumstudents.org/params.php">
+            <h1>Retrive your grade</h1>
+            <div class="form-body">
+                <label for="sname" class="form-label">Name:</label>
+                <input type="text" id="sname" name="sname" class="form-input">
+            </div>
+
+            <div class="form-body">
+                <label for="sid" class="form-label">Student Id:</label>
+                <input type="text" id="sid" name="sid" class="form-input">
+            </div>
+
+            <div class="form-body">
+                <label for="assignment" class="form-label">Assignments:</label>
+                <select id="assignment" name="assignment" class="form-input">
+
+                    <option value="" selected>..Choose Assignment...</option>
+                    <option value="homepage">Home page</option>
+                    <option value="aboutpage">About page</option>
+                    <option value="moviereview">Movie Review</option>
+                    <option value="gradeexcersice">Grade Excercise</option>
+                    <option value="nerdluvsignup">Nerdluv Sign-up Page</option>
+                </select>
+            </div>
+            <div class="form-body">
+                <span class="form-label">Select Entry</span>
+
+                <div class="form-input">
+                    <input type="radio" id="feb2021" name="entry" value="feb2021">
+                    <label for="feb2021">Feb-2021</label>
+                    <input type="radio" id="may2021" name="entry" value="may2021">
+                    <label for="may2021" class="radio-inline">May-2021</label>
+
+                    <input type="radio" id="aug2021" name="entry" value="aug2021">
+                    <label for="aug2021">Aug-2021</label>
+                </div>
+            </div>
+            <div class="form-body">
+                <span class="form-label"></span>
+                <div class="form-input">
+                    <input type="checkbox" id="verify" name="verify" value="verify">
+                    <label for="verify"> Accept terms and conditions</label>
+                </div>
+            </div>
+
+            <p class="button-container">
+                <input type="submit" value="Get Grades" class="button">
+            </p>    
+        
+        </form>
+        <div class="validators">
+            <a href="https://validator.w3.org/check?uri=https://tadem.github.io/gradeexcersice/grades.html">
+                <img src="https://tadem.github.io/images/w3c-html.png" alt="html validator" >
+            </a>
+            <a
+                href="http://jigsaw.w3.org/css-validator/validator?uri=https://tadem.github.io/gradeexcersice/grades.css">
+                <img src="https://tadem.github.io/images/w3c-css.png" alt="css validator" >
+            </a>
+    </div>
+    </div>
+</body>
+
+</html>
