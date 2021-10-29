@@ -73,7 +73,7 @@ div.rightside dl ul {
 }
 
 .container > div.leftside .header {
-    background-image: url('images/rbg.png');
+    background-image: url('../images/rbg.png');
     border-top-left-radius: 28px;
     height: 85px;
     color: red;
