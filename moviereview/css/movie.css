@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/background.png');
+    background-image: url('../images/background.png');
     font-family: sans-serif;
 }
 
@@ -9,7 +9,7 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
-    background-image: url(images/bannerbg.png);
+    background-image: url(../images/bannerbg.png);
 }
 
 .banner img {
@@ -73,7 +73,7 @@ div.rightside dl ul {
 }
 
 .container > div.leftside .header {
-    background-image: url('images/rbg.png');
+    background-image: url('../images/rbg.png');
     border-top-left-radius: 28px;
     height: 85px;
     color: red;
