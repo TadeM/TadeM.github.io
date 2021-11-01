@@ -32,7 +32,7 @@ function bling() {
         t.style.textDecoration = "underline";
         //var bimage = document.getElementsByName("body");
         //bimage.style.backgoundImage = url("/img/100.jpg");
-        document.body.style.backgroundImage = "url('/img/100.jpg')";
+        document.body.style.backgroundImage = "url('../img/100.jpg')";
 
 
     }
