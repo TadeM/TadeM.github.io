@@ -18,7 +18,7 @@ Both of them will display 6
 3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
 says “BOOYAH!”
 setTimeout(booyah1, 2000);
-setTimeout(booyah2, 2000);
+setTimeout(booyah2(), 2000);
 
 Answer
 function booyah1() {
@@ -26,7 +26,7 @@ function booyah1() {
 }
 
 function booyah2() {
-	alert("BOOYAH!")
+	return function() {alert("BOOYAH!")}
 }
 
 4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
