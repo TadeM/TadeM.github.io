@@ -15,7 +15,7 @@ document.write(b);
 document.write(x);
 }
 
-Answer: undefined 8 8 9 10 1
+Answer: 10 8 8 9 10 1
 ============================================
 
 2. What is the difference between a method and function?
