@@ -49,7 +49,7 @@ Answer: When a function is called with the new operator, then this refers to the
 6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 
 'this'. When f is called by x.f( ), what does 'this' refer to?
 
-Answer: in this case this referes to object y
+Answer: in this case this referes to object x
 
 ============================================
 7. What is a free variable in JavaScript?
