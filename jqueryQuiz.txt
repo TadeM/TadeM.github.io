@@ -1,0 +1,49 @@
+1. In jQuery terminology, what is the difference between the “jQuery function” and the “jQuery object”?
+
+Answer:
+
+A jQuery function is afunction provided by jQuery library which lets us select elements from the html page using CSS selector.
+For example:
+    jQuery('p') or $('p') ->selects all p tag elements from the html page.
+
+When we select elements using jQuery function a jQuery Object wrapping all the elements that mach the selector will be returned. 
+jQuery Objects behaves both like an objects and an arrays. 
+You treat it like an object when you chain, but you can also treat it like array.
+For example:
+var divs =  $("div");
+for (i=0; i<divs.length; i++){
+  console.log(divs[i]);
+}
+
+2. Write jQuery code to find all h1 elements that are children of a div element and make their background color red.
+Sample HTML:
+<body>
+<h1>abc</h1><br><div>
+  <h1>div-1</h1>
+  <h1>div-2</h1>
+  </div>
+  <h1>xyz</h1>
+</body>
+
+Answer:
+
+
+$('div h1').css( "background-color", "red" );
+
+3. Use a jQuery method to insert the text "YES!" at the end of the <p> element.
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+<!—INSERT YOUR JQUERY CODE HERE  - - >
+</script>
+</head>
+<body>
+<p>Is jQuery FUN or what? </p>
+</body>
+</html>
+
+
+Answer:
+
+$("p").append("YES!");
