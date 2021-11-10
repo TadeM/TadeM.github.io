@@ -1,17 +1,18 @@
-1. Find the text in the first paragraph (stripping out the html), then set the html of the last paragraph to show it is just text (the red bold is gone).
-<!doctype html>
+1. Find the text in the first paragraph (stripping out the html), 
+then set the html of the last paragraph to show it is just text (the red bold is gone).
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>text demo</title>
 <style>
-p {
-color: blue;
-margin: 8px;
-}
-span {
-color: red;
-}
+	p {
+		color: blue;
+		margin: 8px;
+	}
+	span {
+		color: red;
+	}
 </style>
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
@@ -19,20 +20,16 @@ color: red;
 <p><span>Test</span> Paragraph.</p>
 <p></p>
 <script>
-<!—INSERT YOUR JQUERY CODE HERE - - >
+//<!—INSERT YOUR JQUERY CODE HERE - - >
+    var firstParagraph = $('body p:first-child');
+    const firstParagraphContent = firstParagraph.html();    
+    var secondParagraph = $('body p:last-child');
+    secondParagraph.append(firstParagraphContent);
+    $("p span, p").css({"color": "inherit"});
 </script>
 </body>
 </html>
 
-    =================================
-    Answer:
-
-    var firstParagraph=$('body p:first-child');
-    const firstParagraphContent=firstParagraph.html();
-    firstParagraph.html('');
-    var secondParagraph=$('body p:last-child');
-    secondParagraph.append(firstParagraphContent);
-    $("p span, p").css({"color": "inherit"});
 
 2. Write jQuery code to create a red background for the level-2 list items.
 <ul class="level-1">
@@ -57,11 +54,12 @@ color: red;
     =================================
     Answer:
 
-    $('.level-2').css({"color":"red"});
+    $('.level-2').css({"background-color":"red"});
     or
-    $('ul.level-2').css({"color":"red"});
+    $('ul.level-2').css({"background-color":"red"});
 
-3. Write jQuery code to select the element that comes immediately before item three and change its background color to blue.
+3. Write jQuery code to select the element that comes immediately before item three and 
+change its background color to blue.
     
 <ul>
  <li>list item 1</li>
@@ -76,11 +74,10 @@ color: red;
     
     $( "li.third-item" ).prev().css( "background-color", "blue" );
 
-4.Let us one additional requirement for the "Go Vegetarian" button of the 
-Webville Eatery Menu described in Chapter 4 of Head First jQuery: 
-"Turkey" in the ingredient list of any entree is replaced by "Mashed Potatoes" in the vegetarian version.
-You may assume there is a class "turkey" that identifies these items in the list. 
-Describe the changes to the Javascript (jQuery) code to implement this new requirement.
+4.Let us one additional requirement for the "Go Vegetarian" button of the Webville Eatery Menu described 
+in Chapter 4 of Head First jQuery: "Turkey" in the ingredient list of any entree is replaced by "Mashed
+Potatoes" in the vegetarian version. You may assume there is a class "turkey" that identifies these items 
+in the list. Describe the changes to the Javascript (jQuery) code to implement this new requirement.
   
   =================================
   Answer:
@@ -90,7 +87,8 @@ Describe the changes to the Javascript (jQuery) code to implement this new requi
 		$(".portobello").parent().parent().addClass("veg_leaf");
   
 
-5. Write Javascript (jQuery) code to change the color of the parent and grandparent list items of the span of text ("some text") in the following to green.
+5. Write Javascript (jQuery) code to change the color of the parent and grandparent list items of the 
+span of text ("some text") in the following to green.
 
 <!DOCTYPE html>
 <html>
@@ -99,7 +97,12 @@ Describe the changes to the Javascript (jQuery) code to implement this new requi
 <script>
 $(document).ready(function(){
 <!—INSERT YOUR JQUERY CODE HERE - - >
+
+$("span").parentsUntil("div").css({ "color": "green" }); 
+    or
+    $("span").parents("ul").css({ "color": "green" });
 });
+
 </script>
 
 </head>
@@ -116,9 +119,4 @@ $(document).ready(function(){
 </body>
 </html>
 
-    =================================
-    Answer: 
-
-    $("span").parentsUntil("div").css({ "color": "green" }); 
-    or
-    $("span").parents("ul").css({ "color": "green" });
+    
