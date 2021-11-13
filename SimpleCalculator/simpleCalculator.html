@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Calculator</title>
+    <meta charset="utf-8" />   
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <h1>Simple Calculator</h1>
+    </header>
+    <fieldset>
+        <legend>Calculate:</legend>
+        <form class="form" action="/compute" method="POST">
+            <div class="form-body">
+                <label for="number1" class="form-label">Number1:</label>
+                <input type="number" id="number1" name="number1" class="form-input" maxlength="16" step="0.01">
+            </div>
+            <div class="form-body">
+                <label for="number2" class="form-label">Number2:</label>
+                <input type="number" id="number2" name="number2" class="form-input" maxlength="16" step="0.01">
+            </div>
+            <div class="form-body">
+                <span class="form-label">Operation:</span>
+                <select id="operator" name="operator">
+                    <option value="/" selected>
+                        / (Divide)
+                    </option>
+                    <option value="*">
+                       x (multiply)
+                    </option>
+                    <option value="-">
+                        - (Substract)
+                    </option>
+                    <option value="+">
+                        + (Add)
+                    </option>
+                </select>
+            </div>
+          
+            <div class="form-body">
+                <span class="form-label"></span>
+                <input type="submit" value="Calculate">
+            </div>
+        </form>
+    </fieldset>
+   
+</div>
+
+</body>
+</html>
