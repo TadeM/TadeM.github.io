@@ -1,0 +1,26 @@
+{
+  "name": "onlinedictionary",
+  "version": "1.0.0",
+  "description": "Web application programming (WAP) course Online dictionary project ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/afeworkt/cs472.git"
+  },
+  "keywords": [
+    "dictionary",
+    "word",
+    "text",
+    "search"
+  ],
+  "author": "Afework Temesgen Fita",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}

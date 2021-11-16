@@ -1,0 +1,79 @@
+.container{
+    margin: 20px auto;
+    /* border:2px solid blue; */
+    width: 80%;
+    padding: 25px 50px;
+    box-sizing: border-box;
+}
+h1{
+    margin-bottom: 0px;
+}
+#dictionary{
+  color: #8d41a0;
+  font-size: 32px;
+}
+#online{
+  color: rgb(139, 231, 19);
+  font-size: 46px;
+}
+h3{
+    font-style: italic;
+}
+.search-box input{
+    width: 75%;
+    border: 1px solid rgb(134, 18, 18);
+    border-radius: 8px;
+    line-height: 32px;
+    padding: 4px 8px;
+    font-size: large;
+    vertical-align: middle;
+    
+
+}
+
+.search-box button{
+    width: 20%;
+    border: 0px;
+    border-radius: 8px;
+    line-height: 32px;
+    padding: 4px 8px;
+    font-weight: 600;
+    margin: 0px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #0e9250;
+    border-color: #084426;
+}
+
+.search-result{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px auto;
+    /* border: 1px solid blue; */
+}
+
+.search-result p{
+  padding: 5px 0px;
+  font-style: italic;
+}
+.number{
+  display: inline-block;
+  font-size: 16px;
+  color: #41a071;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  font-style: normal; 
+}
+.wordtype{
+  font-size: 14;
+  font-weight: bold;
+  font-style: oblique;
+}
+#loader{
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-size: medium;
+}
+
